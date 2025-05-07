@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banco Digital</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="#" class="header__logo">
+                <img src="assets/logo_bank.png" alt="Banco Digital Logo" class="header__logo-image" />
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+            <ul class="header__nav-links" id="nav-links">
+                <li><a class="header__link" href="#">Inicio</a></li>
+                <li><a class="header__link" href="#benefits">Beneficios</a></li>
+                <li><a class="header__link" href="#testimonials">Testimonios</a></li>
+                <li><a class="header__link" href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">Abre tu Cuenta Digital en Minutos</h1>
+            <p class="hero__subtitle">Sin comisiones, 100% online</p>
+            <button class="account-button" id="account-button">¡Quiero mi cuenta!</button>
+        </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+        <h2 class="benefits__title">Beneficios</h2>
+        <div class="benefits__list">
+            <div class="benefits__item">Sin comisiones: Ahorra en tarifas bancarias</div>
+            <div class="benefits__item">Tarjeta Digital: Compras seguras online</div>
+            <div class="benefits__item">Transferencias Instantáneas: Envía dinero al instante</div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2 class="testimonials__title">Testimonios</h2>
+        <blockquote class="testimonials__quote">"Abrir mi cuenta fue rápido y fácil." - Santiago B.</blockquote>
+        <blockquote class="testimonials__quote">"Me encanta la tarjeta digital, súper práctica." - Miquel L.
+        </blockquote>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="contact__title">Contacto</h2>
+        <form class="contact__form" id="contact-form">
+            <label class="contact__label" for="nombre">Nombre</label>
+            <input class="contact__input" type="text" id="nombre" placeholder="Tu nombre" required />
+
+            <label class="contact__label" for="email">Correo electrónico</label>
+            <input class="contact__input" type="email" id="email" placeholder="Tu correo electrónico" required />
+
+            <label class="contact__label" for="mensaje">Mensaje</label>
+            <textarea class="contact__textarea" id="mensaje" placeholder="Tu mensaje"></textarea>
+
+            <button class="contact__submit" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">Síguenos en redes sociales</p>
+        <div class="footer__social-links">
+            <a class="footer__link" href="#">Facebook</a> |
+            <a class="footer__link" href="#">Instagram</a> |
+            <a class="footer__link" href="#">Twitter</a>
+        </div>
+        <p class="footer__contact">Contacto: contacto@bancodigital.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

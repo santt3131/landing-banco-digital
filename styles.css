@@ -1,0 +1,282 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Arial", "sans-serif";
+	line-height: 1.6;
+	background-color: #f4f4f4;
+	font-size: 20px;
+	color: #333;
+}
+
+/* Header */
+.header {
+	background-color: #014480;
+	padding: 20px;
+	color: #fff;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.header__nav-links {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.header__link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header__link:hover {
+	color: #ffd700;
+}
+
+.header__logo-image {
+	height: 70px;
+	width: auto;
+}
+
+/* Hero Section */
+.hero {
+	background-image: url("assets/banking.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	padding: 100px 20px;
+	text-align: center;
+}
+
+.hero__title {
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+	animation: fadeInDown 1s ease-out;
+}
+
+.hero__subtitle {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+	animation: fadeIn 1s ease-in;
+}
+
+.account-button {
+	background-color: #ffd700;
+	color: #000;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 4px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+}
+
+.account-button:hover {
+	background-color: #e6c200;
+	transform: translateY(-2px);
+}
+
+/* Benefits */
+.benefits {
+	padding: 60px 20px;
+	background-color: #fff;
+	text-align: center;
+}
+
+.benefits__title {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.benefits__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.benefits__item {
+	background: #e0f7fa;
+	padding: 20px;
+	border-radius: 8px;
+	width: 250px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefits__item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Testimonials */
+.testimonials {
+	background: #f9f9f9;
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.testimonials__title {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.testimonials__quote {
+	font-style: italic;
+	margin: 20px auto;
+	max-width: 600px;
+	font-size: 1.1rem;
+}
+
+/* Contact */
+.contact {
+	padding: 60px 20px;
+	background-color: #fff;
+}
+
+.contact__title {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.contact__form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.contact__label {
+	font-weight: bold;
+}
+
+.contact__input,
+.contact__textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.contact__textarea {
+	resize: vertical;
+	min-height: 100px;
+}
+
+.contact__submit {
+	background-color: #004481;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+}
+
+.contact__submit:hover {
+	background-color: #0066cc;
+}
+
+/* Footer */
+.footer {
+	background-color: #003366;
+	color: #fff;
+	text-align: center;
+	padding: 30px 20px;
+	font-size: 0.9rem;
+}
+
+.footer__link {
+	color: #ffd700;
+	text-decoration: none;
+}
+
+.footer__link:hover {
+	text-decoration: underline;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/*Responsive */
+.menu-toggle {
+	display: none;
+	font-size: 2rem;
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+/* Mobile*/
+@media (max-width: 767px) {
+	.header__nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.menu-toggle {
+		display: block;
+		margin: 10px 0;
+	}
+
+	.header__nav-links {
+		display: none; /* Oculta el elemento*/
+		flex-direction: column;
+		gap: 10px;
+		width: 100%;
+		align-items: center;
+	}
+
+	.header__nav-links.active {
+		display: flex;
+	}
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+	.contact__form {
+		max-width: 500px;
+	}
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+	.hero__title {
+		font-size: 4rem;
+	}
+
+	.benefits__item {
+		width: 300px;
+	}
+
+	.contact__form {
+		max-width: 700px;
+	}
+}
