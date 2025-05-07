@@ -115,23 +115,22 @@ body {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Testimonials */
-.testimonials {
-	background: #f9f9f9;
-	padding: 60px 20px;
-	text-align: center;
+/* Carousel */
+.carousel-indicators {
+	position: relative !important;
 }
 
-.testimonials__title {
-	font-size: 2rem;
-	margin-bottom: 20px;
+.carousel-indicators [data-bs-target] {
+	background-color: #004481 !important;
+	opacity: 0.4;
+	border: none;
+	width: 12px;
+	height: 12px;
 }
 
-.testimonials__quote {
-	font-style: italic;
-	margin: 20px auto;
-	max-width: 600px;
-	font-size: 1.1rem;
+.carousel-indicators .active {
+	background-color: #007bff !important;
+	opacity: 1;
 }
 
 /* Contact */
